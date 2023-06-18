@@ -1,11 +1,11 @@
-About r-nplyr
-=============
+About r-nplyr-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-nplyr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/markjrieke/nplyr, https://markjrieke.github.io/nplyr/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-nplyr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides functions for manipulating nested data frames in a list-column using 'dplyr' <https://dplyr.tidyverse.org/> syntax. Rather than unnesting, then manipulating a data frame, 'nplyr' allows users to manipulate each nested data frame directly. 'nplyr' is a wrapper for 'dplyr' functions that provide tools for common data manipulation steps: filtering rows, selecting columns, summarising grouped data, among others.
 
