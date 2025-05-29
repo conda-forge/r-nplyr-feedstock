@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/nplyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/nplyr/nplyr_{{ version }}.tar.gz
-  sha256: 10359ae5b925fd0a0e5db7b38518a43d06464cee059e96c6d5bb5df9a2a13759
+  sha256: 749b352af8fa1d6b812b39c854794c4fdc455daf706e8ab12703bab6fe32555a
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -45,8 +45,8 @@ test:
 about:
   home: https://github.com/markjrieke/nplyr, https://markjrieke.github.io/nplyr/
   license: MIT
-  summary: "Provides functions for manipulating nested data frames in a list-column using 'dplyr' <https://dplyr.tidyverse.org/> syntax. Rather than unnesting, then manipulating a data frame, 'nplyr' allows users to manipulate each nested data frame directly. 'nplyr' is a wrapper for 'dplyr' functions that provide tools\
-    \ for common data manipulation steps: filtering rows, selecting columns, summarising grouped data, among others."
+  summary: "Provides functions for manipulating nested data frames in a list-column using 'dplyr' <https://dplyr.tidyverse.org/> syntax. Rather than unnesting, then manipulating a data frame, 'nplyr' allows users to manipulate each nested data frame directly. 'nplyr' is a wrapper for 'dplyr' functions that provide tools
+    for common data manipulation steps: filtering rows, selecting columns, summarising grouped data, among others."
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
